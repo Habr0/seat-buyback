@@ -9,7 +9,7 @@
 
 ```shell
 # Install the package
-composer require habr0/xxx
+composer require habr0/seat-buyback
 
 # Run the migrations
 php artisan migrate
