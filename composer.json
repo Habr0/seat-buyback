@@ -1,0 +1,34 @@
+{
+    "name": "habr0/seat-buyback",
+    "type": "seat-plugin",
+    "autoload": {
+        "psr-4": {
+            "Habr0\\Buyback\\": "src/",
+            "Habr0\\Buyback\\Database\\Seeders\\": "src/database/seeders/"
+        }
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Major Habro",
+            "email": "major_habr0@eve.ingame"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Habr0\\Buyback\\BuybackServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "eveseat/services": "^5.0",
+        "eveseat/eveapi": "^5.0",
+        "eveseat/web": "^5.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
