@@ -6,7 +6,7 @@ use Habr0\Buyback\Http\Controllers\ContractsController;
 use Illuminate\Support\Facades\Route;
 
 Route::controller(AppraisalController::class)
-    ->middleware(['web', 'auth', 'locale'])
+    ->middleware(['web', 'auth', 'locale', 'can:buyback.appraisals'])
     ->prefix('buyback')
     ->group(function () {
         Route::get('/appraisal', 'index')->name('buyback.appraisal_index');
@@ -14,14 +14,14 @@ Route::controller(AppraisalController::class)
     });
 
 Route::controller(ContractsController::class)
-    ->middleware(['web', 'auth', 'locale'])
+    ->middleware(['web', 'auth', 'locale', 'can:buyback.contracts'])
     ->prefix('buyback')
     ->group(function () {
         Route::get('/contracts', 'index')->name('buyback.contracts_index');
     });
 
 Route::controller(AdminController::class)
-    ->middleware(['web', 'auth', 'locale'])
+    ->middleware(['web', 'auth', 'locale', 'can:buyback.admin'])
     ->prefix('buyback')
     ->group(function () {
         Route::get('/admin', 'index')->name('buyback.admin_index');
