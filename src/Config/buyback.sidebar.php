@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'text' => [
+    'buyback' => [
         'name' => 'Buyback',
         'icon' => 'fas fa-shopping-cart',
         'route_segment' => 'buyback',
