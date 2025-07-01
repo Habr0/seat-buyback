@@ -151,7 +151,7 @@
 @stop
 
 @push('javascript')
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="{{ asset('web/js/alpine.min.js') }}" defer></script>
     <script>
         function appraisalComponent() {
             return {

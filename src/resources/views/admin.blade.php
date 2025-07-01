@@ -176,7 +176,7 @@
 @stop
 
 @push('javascript')
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="{{ asset('web/js/alpine.min.js') }}" defer></script>
     <script>
         function marketGroupsComponentInit() {
             this.select2 = $(this.$refs.select).select2({

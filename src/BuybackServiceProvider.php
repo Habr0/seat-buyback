@@ -10,7 +10,7 @@ class BuybackServiceProvider extends AbstractSeatPlugin
         $this->addRoutes();
         $this->addViews();
         $this->addMigrations();
-        // $this->addPublications();
+        $this->addPublications();
     }
 
     public function register()

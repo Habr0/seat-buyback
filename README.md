@@ -14,6 +14,9 @@ composer require habr0/seat-buyback
 # Run the migrations
 php artisan migrate
 
+# Publish assets
+php artisan vendor:publish # Select habr0/*
+
 # Run the seeder
 php artisan db:seed --class="Habr0\Buyback\Database\Seeders\BuybackSeeder"
 
